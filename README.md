@@ -18,3 +18,19 @@ Due to strict copyright restrictions enforced by the publisher, the original ped
 
 ## Usage
 The provided script is designed to process and merge the JSON outputs from AWS Textract (Stream A) and Google Cloud Vision (Stream B).
+
+
+
+graph TD
+    A[Бастапқы мәтін <br> веб-сайттан алынған] --> B
+    
+    B[Фонологиялық өңдеу <br> және Prosody_text жасау] --> C
+    
+    C[Piper моделі <br> акустикалық өңдеу] --> D
+    
+    D([Дайын аудио <br> көру қабілеті нашар адамдарға ұсынылатын нәтиже])
+
+    style A fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style B fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style D fill:#fff3e0,stroke:#f57c00,stroke-width:2px,stroke-dasharray: 5 5
